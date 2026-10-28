@@ -19,7 +19,6 @@ export const Tags = () => {
             onClick={() => {
               setState((currentState) => ({
                 ...currentState,
-                // @ts-expect-error
                 tagselected: tag.id,
               }));
             }}
@@ -37,7 +36,6 @@ export const Tags = () => {
               {
                 id: new Date().getTime(),
                 value: "New",
-                // @ts-expect-error
                 otherValue: "something",
               },
             ],
